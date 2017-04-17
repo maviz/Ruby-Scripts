@@ -1,3 +1,12 @@
+# css-colors.rb
+# _____________
+# run the script on terminal like >
+#   $ruby css-colors < path_to_css_file OR url_to_hosted_css_resouce >
+  
+#   running the script will give you a report.html file in the same directory which will give you a visual of all 
+#   the colors used in the css along with the number of times each has been used. 
+
+
 require 'net/http'
 unless ARGV[0] == nil || ARGV[1] == nil                             #  checking for arguments if they are passed along or not ?
  if File.exists?(ARGV[0]) && !ARGV[0].scan(/.css/).empty?           # enters this block if passed argument is a file that to a .css one

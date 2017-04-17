@@ -1,3 +1,17 @@
+# log-stats.rb 
+#   run the script along with its options and a path to the appache log file.
+#   $ruby css-colors < path_appache_log_file OR link_to_hosted_apache_log> --< options >
+  
+#   options can be --hourly -> to get a count of resouces on hourly basis 
+#                  --requesters -> to get a count on requesters ip basis 
+#                  --error ->  to get a count on http error types
+#                  --resources -> to get a count on the basis of resource requested
+#                  --help -> list the available options
+
+
+
+
+
 require 'getoptlong'
 
 opts = GetoptLong.new(
